@@ -27,7 +27,7 @@
 
 # 📖 Awesome Books <a name="about-project"></a>
 
-This is my Microverse **Awesome Books** site, created with HTML, Tailwind CSS, Javascript and mobile first approach.
+This is  **Awesome Books** site, created with HTML and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -135,6 +135,13 @@ Deployed by GitHub Pages.
 
 - GitHub: [@hajnaloltyan](https://github.com/hajnaloltyan)
 - LinkedIn: [Hajnal Oltyan](https://www.linkedin.com/in/hajnalka-oltyan/)
+
+👤 **steven wafeek**
+
+- GitHub: [StevenWafeek](https://github.com/StevenWafeek)
+- Twitter: [steven_hakeem](https://twitter.com/steven_hakeem)
+- LinkedIn: [steven wafeek
+](https://www.linkedin.com/in/steven-wafeek-b629341b6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
