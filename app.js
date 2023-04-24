@@ -3,38 +3,37 @@ const bookArray = JSON.parse(localStorage.getItem('bookArray')) || [];
 function updateLocalStorage() {
   localStorage.setItem('bookArray', JSON.stringify(bookArray));
 }
+
 function displayBooks() {
   const bookList = document.getElementById('book-list');
 
   bookList.innerHTML = '';
-  /* eslint-disable */
-  bookArray.forEach((book, del) => {
+  bookArray.forEach((book, index) => {
+    const div = document.createElement('div');
+    div.setAttribute('id', 'div');
+    bookList.appendChild(div);
     const titleB = document.createElement('h3');
     titleB.innerHTML = `${book.book}`;
-    bookList.appendChild(titleB);
+    div.appendChild(titleB);
     const authorB = document.createElement('h3');
     authorB.innerHTML = `${book.author}`;
-    bookList.appendChild(authorB);
+    div.appendChild(authorB);
     const buttonB = document.createElement('h3');
     const removeButton = document.createElement('button');
     removeButton.innerHTML = 'Remove';
     removeButton.addEventListener('click', () => {
-      removeElement(del);
+      buttonB.parentElement.remove();
+      bookArray.splice(index, 1);
+      updateLocalStorage();
     });
     buttonB.appendChild(removeButton);
-    bookList.appendChild(buttonB);
+    div.appendChild(buttonB);
     const hr = document.createElement('hr');
-    bookList.appendChild(hr);
+    div.appendChild(hr);
   });
 }
-/* eslint-enable */
 function addBook(author, book) {
   bookArray.push({ author, book });
-  updateLocalStorage();
-  displayBooks();
-}
-function removeElement(del) {
-  bookArray.splice(del, 1);
   updateLocalStorage();
   displayBooks();
 }
@@ -49,4 +48,5 @@ addButton.addEventListener('click', () => {
   authorInput.value = '';
   bookInput.value = '';
 });
+updateLocalStorage();
 displayBooks();
