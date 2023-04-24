@@ -9,12 +9,12 @@ function displayBooks() {
   bookList.innerHTML = '';
   /* eslint-disable */
   bookArray.forEach((book, del) => {
+    const titleB = document.createElement('h3');
+    titleB.innerHTML = `${book.book}`;
+    bookList.appendChild(titleB);
     const authorB = document.createElement('h3');
     authorB.innerHTML = `${book.author}`;
     bookList.appendChild(authorB);
-    const titleB = document.createElement('h4');
-    titleB.innerHTML = `${book.book}`;
-    bookList.appendChild(titleB);
     const buttonB = document.createElement('h3');
     const removeButton = document.createElement('button');
     removeButton.innerHTML = 'Remove';

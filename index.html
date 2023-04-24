@@ -8,17 +8,18 @@
 </head>
   <body>
     <h1>Awesome books</h1>
+    <article id="book-list"> </article>
     <div>
-      <article id="book-list"> </article>
-      <label for="author">Author:</label>
-      <input type="text" id="author" />
+      <label for="book" hidden>Title</label>
+      <input type="text" id="book" placeholder="Title"/>
+      <p></p>
     </div>
     <div>
-      <label for="book">Book:</label>
-      <input type="text" id="book" />
+      <label for="author" hidden>Author</label>
+      <input type="text" id="author" placeholder="Author"/>
+      <p></p>
     </div>
     <button type="button" id="add">Add Book</button>
-    <!-- <script src="app.js"></script> -->
     <script src="app.js"> </script>
   </body>
 </html>
