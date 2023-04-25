@@ -1,3 +1,12 @@
+/* eslint-disable max-classes-per-file */
+
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
+
 class Library {
   constructor() {
     this.bookArray = JSON.parse(localStorage.getItem('bookArray')) || [];
@@ -52,4 +61,6 @@ class Library {
     this.updateLocalStorage();
   }
 }
- new Library();
+
+const library = new Library();
+library.displayBooks();
