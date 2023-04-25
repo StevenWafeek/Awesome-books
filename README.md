@@ -141,7 +141,7 @@ Deployed by GitHub Pages.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future milestone <a name="future-features"></a>
-- Use ES6
+- using ES6
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,6 +173,6 @@ I would like to thank Microverse to have this opportunity, and also thank you th
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="./MIT.md">back to top</a>)</p>
