@@ -36,7 +36,7 @@ class Library{
       this.bookList.appendChild(bookContainer);
       const bookDetails = document.createElement('h3');
       bookDetails.innerHTML = `${book.author} by ${book.title}`;
-      div.appendChild(bookDetails);
+      bookContainer.appendChild(bookDetails);
       const buttonB = document.createElement('h3');
       const removeButton = document.createElement('button');
       removeButton.innerHTML = 'Remove';
@@ -48,9 +48,7 @@ class Library{
       });
 
       buttonB.appendChild(removeButton);
-      div.appendChild(buttonB);
-      const hr = document.createElement('hr');
-      div.appendChild(hr);
+      bookContainer.appendChild(buttonB);
     });
   }
 
