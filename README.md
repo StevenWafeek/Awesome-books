@@ -8,7 +8,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -48,12 +47,6 @@ This is  **Awesome Books** site, created with HTML and Javascript.
 - **GitHub WorkFlow**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link]()
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -147,8 +140,8 @@ Deployed by GitHub Pages.
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-
+## 🔭 Future milestone <a name="future-features"></a>
+- Use ES6
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
