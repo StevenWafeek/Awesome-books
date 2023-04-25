@@ -1,12 +1,5 @@
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-
-class Library{
-  constructor(){
+class Library {
+  constructor() {
     this.bookArray = JSON.parse(localStorage.getItem('bookArray')) || [];
     this.bookList = document.getElementById('book-list');
     this.authorInput = document.getElementById('author');
@@ -22,13 +15,13 @@ class Library{
     });
 
     this.displayBooks();
-  };
+  }
 
   updateLocalStorage() {
     localStorage.setItem('bookArray', JSON.stringify(this.bookArray));
   }
 
-  displayBooks(){
+  displayBooks() {
     this.bookList.innerHTML = '';
     this.bookArray.forEach((book, index) => {
       const bookContainer = document.createElement('div');
@@ -54,9 +47,9 @@ class Library{
 
   addBook(author, title) {
     const book = new Book(author, title);
-    this.bookArray.push(book)
+    this.bookArray.push(book);
     this.displayBooks();
     this.updateLocalStorage();
   }
 }
-const library = new Library();
+ new Library();
