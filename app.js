@@ -48,6 +48,12 @@ displayBooks(){
       div.appendChild(hr);
     });
   }
+
+addBook(author, book) {
+  const titleB = new Book(author, book);
+  this.bookArray.push(titleB)
+  this.displayBooks();
+  this.updateLocalStorage();
 }
-updateLocalStorage();
-displayBooks();
+}
+const library = new Library();
