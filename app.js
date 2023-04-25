@@ -47,6 +47,7 @@ class Library {
         buttonB.parentElement.remove();
         this.bookArray.splice(index, 1);
         this.updateLocalStorage();
+        this.displayBooks();
       });
 
       buttonB.appendChild(removeButton);
