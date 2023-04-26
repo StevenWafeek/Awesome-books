@@ -15,6 +15,10 @@ body {
   border: 2px solid;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 #header ul {
   width: 40%;
   display: flex;
@@ -25,6 +29,12 @@ body {
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
+  color: black;
+  border-bottom: 1px solid transparent;
+}
+
+#header ul a:hover {
+  border-bottom: 1px solid black;
 }
 
 #contact {
@@ -56,17 +66,26 @@ body {
 #title {
   width: 51%;
   height: 34px;
+  border: 2px solid;
+  padding-left: 1%;
 }
 
 #author {
   width: 51%;
   height: 34px;
+  border: 2px solid;
+  padding-left: 1%;
 }
 
 #add {
   margin-left: 37%;
   width: 15%;
   height: 37px;
+}
+
+#add:hover {
+  background-color: black;
+  color: white;
 }
 
 #book-list {
