@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
   <body>
-    <h1>All Awesome books</h1>
-    <article id="book-list"> </article>   
-      <div class="bookInputs">
+    <header id="header">
+        <h1>Awesome Books</h1>
+        <ul>
+            <a href="#Books" id="books-link">My books</a>
+            <a href="#bookInputs" id="bookInputs-link">Add books</a>
+            <a href="#contact" id="contact-link">Contact</a>
+        </ul>
+    </header>
+
+      <div id="books">
+          <h1>All Awesome books</h1>
+          <article id="book-list"> </article>   
+
+    </div>
+          
+      <div id="bookInputs">
         <h3>Add a new book</h3>
         <label for="title" hidden>Title</label>
         <input type="text" id="title" placeholder="Title"/>
@@ -18,6 +31,25 @@
         <input type="text" id="author" placeholder="Author"/>
       <button type="button" id="add">Add Book</button>
     </div>
+    <section id="contact">
+        <h1 class="h1-contact">Contact information</h1>
+        <div >
+          <p>
+            Do you have any questions or you just want to say "Hello" <br />
+            you can reach out to us!
+          </p>
+          <div class="ul-div">
+            <ul>
+              <li>Our email mai@mail.com</li>
+              <li>Our phone number:015547835353</li>
+              <li>Our address streatname22.85042 city ,country</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="copyright">Copyright .....</div>
+      </footer>
     <script src="app.js"> </script>
   </body>
 </html>
