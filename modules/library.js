@@ -1,12 +1,6 @@
-/* eslint-disable max-classes-per-file */
-const inputsbooks = () => {
-  class Book {
-    constructor(title, author) {
-      this.title = title;
-      this.author = author;
-    }
-  }
+import Book from './book.js';
 
+const inputsbooks = () => {
   class Library {
     constructor() {
       this.bookArray = JSON.parse(localStorage.getItem('bookArray')) || [];
@@ -67,5 +61,4 @@ const inputsbooks = () => {
   const library = new Library();
   library.displayBooks();
 };
-
 export default inputsbooks;
