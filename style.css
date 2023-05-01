@@ -117,3 +117,8 @@ footer {
   padding: 1%;
   margin-top: 5%;
 }
+
+.timer {
+  display: flex;
+  flex-direction: row-reverse;
+}
